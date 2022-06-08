@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio7</title>
+</head>
+<style>
+    body { font: 12pt Arial; }
+    button { font-size: 12pt; padding: 30px; }
+</style>
+<body>
+    <h1>Converso de Temperatura</h1>
+    <section id="resultadu">
+        <p>Clique no botão acima para iniciar:</p>
+    </section>
+    <button onclick="inicio()">Converter</button>
+<script>
+    var cotacao = window.prompt('Quanto esta a cotação do dolar?')
+    function inicio(){
+        var real = window.prompt('Quantos R$ voce tem na carteira?')
+        var dolar = real*cotacao
+        //var realtr = dolar.toLocaleString('pt-Br', {style: 'currency' ,currency:'USD'})
+        //var dolartr = dolar.toLocaleString('pt-Br'{style: 'currency' ,currency:'USD'})
+        var res = window.document.querySelector('section#resultado')
+        res.innerHTML = `<p>Segundo a cotação, ${real}</p>`
+        //let realtranf = real.toLocaleString('pt-Br'{style: 'currency',currency: 'BRL'})
+        //let dolartranf = dolar.toLocaleString('pt-Br'{style:currency,currency:'USD'})
+    }
+        //let real = window.prompt('Quantos R$ voce tem na carteira?')
+        //let res = window.document.querySelector('section#resultado')
+       // let dolar = Number(real)*Number(cotacao)
+        //let realtranf = real.toLocaleString('pt-Br'{style:currency,currency:'BRL'})
+        //let dolartranf = dolar.toLocaleString('pt-Br'{style:currency,currency:'USD'})
+        //res.innerHTML = `<p>Segundo a cotação, ${realtrans} é ${dolartranf}</p>`
+        
+       // } 
+</script>   
+</body>
+
+</html>

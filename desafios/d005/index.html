@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio5</title>
+</head>
+<style>
+body { font: 12pt Arial; }
+button { font-size: 12pt; padding: 30px; }
+</style>
+<body>
+    <h1>Conversor de Medidas</h1>    
+    <button onclick="inicio()">Calcular</button>
+    <section id="resultado">
+        <p>O resultado é:</p>
+    </section>
+
+<script>
+    function inicio(){
+        let metros = window.prompt('Digite uma distancia em metros (m)')
+        let res = window.document.querySelector('section#resultado')
+        res.innerHTML = `<p>A distrancia de ${metros} metros, corresponde a:${metros/1000} km</p>`
+        res.innerHTML += `<p>\n${metros/100}hm</p>` 
+        res.innerHTML += `<p>\n${metros/10}Dam</p>`
+        res.innerHTML += `<p>\n${metros*10}dm</p>`
+        res.innerHTML += `<p>\n${metros*100}cm</p>`
+        res.innerHTML += `<p>\n${metros/1000}mm</p>`
+    }
+</script>
+</body>
+</html>
